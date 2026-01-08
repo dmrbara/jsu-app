@@ -38,7 +38,7 @@ export default function LoginScreen() {
           <View className="w-full gap-3">
             <Input
               className="h-12"
-              placeholder="Nume de utilizator"
+              placeholder="Username"
               keyboardType="default"
               autoComplete="username"
               autoCapitalize="none"
