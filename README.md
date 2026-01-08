@@ -3,8 +3,7 @@ This file will be modified once everyone has the repository set up.
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) (LTS version recommended)
-- npm (comes with Node.js)
+- [Bun](https://bun.sh/) (recommended) or [Node.js](https://nodejs.org/) (LTS version)
 - [Expo Go](https://expo.dev/go) app on your phone (for mobile testing)
 
 ## Clone the repository
@@ -19,13 +18,13 @@ cd jsu-app
 1. Install dependencies
 
    ```bash
-   npm install
+   bun install
    ```
 
 2. Start the app
 
    ```bash
-   npx expo start
+   bun run start
    ```
 
 ## Running the app
