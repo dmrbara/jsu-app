@@ -1,5 +1,5 @@
-import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import { Tabs } from 'expo-router';
 
 export default function CoordinatorLayout() {
   return (
@@ -11,15 +11,34 @@ export default function CoordinatorLayout() {
       <Tabs.Screen
         name="index"
         options={{
-          title: 'Participants',
+          title: 'Acasă',
           tabBarIcon: ({ color, size }) => (
-            <Ionicons name="people-outline" size={size} color={color} />
+            <Ionicons name="home-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="schedule"
+        options={{
+          title: 'Program',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="calendar-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profil',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="person-outline" size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
         name="scanner"
         options={{
+          href: null,
           title: 'Scanner',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="qr-code-outline" size={size} color={color} />
@@ -29,6 +48,7 @@ export default function CoordinatorLayout() {
       <Tabs.Screen
         name="chat"
         options={{
+          href: null,
           title: 'Chat',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="chatbubbles-outline" size={size} color={color} />
@@ -38,7 +58,8 @@ export default function CoordinatorLayout() {
       <Tabs.Screen
         name="shifts"
         options={{
-          title: 'Shifts',
+          href: null,
+          title: 'Ture',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="time-outline" size={size} color={color} />
           ),
@@ -47,25 +68,17 @@ export default function CoordinatorLayout() {
       <Tabs.Screen
         name="attendance"
         options={{
-          title: 'Attendance',
+          href: null,
+          title: 'Prezență',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="checkbox-outline" size={size} color={color} />
           ),
         }}
       />
       <Tabs.Screen
-        name="schedule"
-        options={{
-          title: 'Schedule',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="calendar-outline" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="settings"
         options={{
-          href: null, // Hide from tab bar, accessible via navigation
+          href: null,
         }}
       />
     </Tabs>

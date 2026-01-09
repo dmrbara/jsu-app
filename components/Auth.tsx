@@ -79,7 +79,7 @@ export default function Auth() {
             <Input
               className="h-12"
               ref={passwordInputRef}
-              placeholder="Password"
+              placeholder="Parolă"
               secureTextEntry
               value={password}
               onChangeText={setPassword}
@@ -90,21 +90,21 @@ export default function Auth() {
 
           {/* Log in button */}
           <Button className="mt-2 w-full" onPress={signInWithEmail} disabled={loading}>
-            <Text>{loading ? 'Loading...' : 'Log in'}</Text>
+            <Text>{loading ? 'Se încarcă...' : 'Conectare'}</Text>
           </Button>
 
           {/* Forgot password link */}
           <AlertDialog>
             <AlertDialogTrigger asChild>
               <Button variant="link">
-                <Text className="text-muted-foreground text-sm">Forgot password?</Text>
+                <Text className="text-muted-foreground text-sm">Ai uitat parola?</Text>
               </Button>
             </AlertDialogTrigger>
             <AlertDialogContent className='max-w-[22rem]'>
               <AlertDialogHeader>
-                <AlertDialogTitle>Forgot Password</AlertDialogTitle>
+                <AlertDialogTitle>Ai uitat parola?</AlertDialogTitle>
                 <AlertDialogDescription>
-                  Please get in touch with your coordinators to change your password.
+                  Contactează coordonatorii pentru a-ți schimba parola.
                 </AlertDialogDescription>
               </AlertDialogHeader>
               <AlertDialogFooter>

@@ -7,8 +7,8 @@ export default function AssignCoordinatorsScreen() {
 
   return (
     <View className="flex-1 items-center justify-center bg-background">
-      <Text className="text-xl font-semibold">Assign Coordinators</Text>
-      <Text className="text-muted-foreground mt-2">Assign coordinators to shift: {id}</Text>
+      <Text className="text-xl font-semibold">Atribuire coordonatori</Text>
+      <Text className="text-muted-foreground mt-2">Atribuie coordonatori la tura: {id}</Text>
     </View>
   );
 }

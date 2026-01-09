@@ -58,7 +58,7 @@ export default function LoginScreen() {
             <View className="w-full gap-3">
               <Input
                 className="h-12"
-                placeholder="Username"
+                placeholder="Utilizator"
                 keyboardType="default"
                 autoComplete="username"
                 autoCapitalize="none"
@@ -71,7 +71,7 @@ export default function LoginScreen() {
               <Input
                 className="h-12"
                 ref={passwordInputRef}
-                placeholder="Password"
+                placeholder="Parolă"
                 secureTextEntry
                 value={password}
                 onChangeText={setPassword}
@@ -82,12 +82,12 @@ export default function LoginScreen() {
 
             {/* Log in button */}
             <Button className="mt-2 w-full" onPress={onLogin} disabled={loading}>
-              <Text>{loading ? 'Se conectează...' : 'Log in'}</Text>
+              <Text>{loading ? 'Se conectează...' : 'Conectare'}</Text>
             </Button>
 
             {/* Forgot password link */}
-            <Button variant="link" onPress={() => Alert.alert('Forgot Password', 'Please get in touch with your coordinators to change your password.')}>
-              <Text className="text-muted-foreground text-sm">Forgot password?</Text>
+            <Button variant="link" onPress={() => Alert.alert('Ai uitat parola?', 'Contactează coordonatorii pentru a-ți schimba parola.')}>
+              <Text className="text-muted-foreground text-sm">Ai uitat parola?</Text>
             </Button>
           </View>
         </View>
