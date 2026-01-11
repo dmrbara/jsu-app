@@ -6,14 +6,14 @@ export default function ChatLayout() {
       <Stack.Screen
         name="faculty"
         options={{
-          title: 'Faculty Chat',
+          title: 'Chat Facultate',
           headerShown: false,
         }}
       />
       <Stack.Screen
         name="house"
         options={{
-          title: 'House Chat',
+          title: 'Chat Căsuță',
           headerShown: false,
         }}
       />

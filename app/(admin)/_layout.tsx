@@ -13,8 +13,8 @@ export default function AdminLayout() {
         <Drawer.Screen
           name="index"
           options={{
-            title: 'Dashboard',
-            drawerLabel: 'Dashboard',
+            title: 'Panou de control',
+            drawerLabel: 'Panou de control',
             drawerIcon: ({ color, size }) => (
               <Ionicons name="grid-outline" size={size} color={color} />
             ),
@@ -23,8 +23,8 @@ export default function AdminLayout() {
         <Drawer.Screen
           name="events"
           options={{
-            title: 'Events',
-            drawerLabel: 'Events',
+            title: 'Evenimente',
+            drawerLabel: 'Evenimente',
             drawerIcon: ({ color, size }) => (
               <Ionicons name="calendar-outline" size={size} color={color} />
             ),
@@ -33,8 +33,8 @@ export default function AdminLayout() {
         <Drawer.Screen
           name="shifts"
           options={{
-            title: 'Shifts',
-            drawerLabel: 'Shifts',
+            title: 'Ture',
+            drawerLabel: 'Ture',
             drawerIcon: ({ color, size }) => (
               <Ionicons name="time-outline" size={size} color={color} />
             ),
@@ -43,8 +43,8 @@ export default function AdminLayout() {
         <Drawer.Screen
           name="houses"
           options={{
-            title: 'Houses',
-            drawerLabel: 'Houses',
+            title: 'Case',
+            drawerLabel: 'Case',
             drawerIcon: ({ color, size }) => (
               <Ionicons name="home-outline" size={size} color={color} />
             ),
@@ -53,8 +53,8 @@ export default function AdminLayout() {
         <Drawer.Screen
           name="alerts"
           options={{
-            title: 'Alerts',
-            drawerLabel: 'Alerts',
+            title: 'Alerte',
+            drawerLabel: 'Alerte',
             drawerIcon: ({ color, size }) => (
               <Ionicons name="megaphone-outline" size={size} color={color} />
             ),
@@ -63,8 +63,8 @@ export default function AdminLayout() {
         <Drawer.Screen
           name="gallery"
           options={{
-            title: 'Gallery',
-            drawerLabel: 'Gallery',
+            title: 'Galerie',
+            drawerLabel: 'Galerie',
             drawerIcon: ({ color, size }) => (
               <Ionicons name="images-outline" size={size} color={color} />
             ),
@@ -73,8 +73,8 @@ export default function AdminLayout() {
         <Drawer.Screen
           name="documents"
           options={{
-            title: 'Documents',
-            drawerLabel: 'Documents',
+            title: 'Documente',
+            drawerLabel: 'Documente',
             drawerIcon: ({ color, size }) => (
               <Ionicons name="document-outline" size={size} color={color} />
             ),
@@ -83,8 +83,8 @@ export default function AdminLayout() {
         <Drawer.Screen
           name="reports"
           options={{
-            title: 'Reports',
-            drawerLabel: 'Reports',
+            title: 'Rapoarte',
+            drawerLabel: 'Rapoarte',
             drawerIcon: ({ color, size }) => (
               <Ionicons name="bar-chart-outline" size={size} color={color} />
             ),
@@ -93,8 +93,8 @@ export default function AdminLayout() {
         <Drawer.Screen
           name="menus"
           options={{
-            title: 'Menus',
-            drawerLabel: 'Menus',
+            title: 'Meniuri',
+            drawerLabel: 'Meniuri',
             drawerIcon: ({ color, size }) => (
               <Ionicons name="restaurant-outline" size={size} color={color} />
             ),

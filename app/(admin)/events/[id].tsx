@@ -7,8 +7,8 @@ export default function EditEventScreen() {
 
   return (
     <View className="flex-1 items-center justify-center bg-background">
-      <Text className="text-xl font-semibold">Edit Event</Text>
-      <Text className="text-muted-foreground mt-2">Editing event: {id}</Text>
+      <Text className="text-xl font-semibold">Editare eveniment</Text>
+      <Text className="text-muted-foreground mt-2">Editare eveniment: {id}</Text>
     </View>
   );
 }

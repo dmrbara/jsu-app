@@ -1,5 +1,5 @@
-import { Tabs } from 'expo-router';
 import { Ionicons } from '@expo/vector-icons';
+import { Tabs } from 'expo-router';
 
 export default function ParticipantLayout() {
   return (
@@ -11,6 +11,15 @@ export default function ParticipantLayout() {
       <Tabs.Screen
         name="index"
         options={{
+          title: 'Acasă',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="home-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name="schedule"
+        options={{
           title: 'Program',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="calendar-outline" size={size} color={color} />
@@ -18,8 +27,18 @@ export default function ParticipantLayout() {
         }}
       />
       <Tabs.Screen
+        name="profile"
+        options={{
+          title: 'Profil',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name="person-outline" size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
         name="chat"
         options={{
+          href: null,
           title: 'Chat',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="chatbubbles-outline" size={size} color={color} />
@@ -27,18 +46,10 @@ export default function ParticipantLayout() {
         }}
       />
       <Tabs.Screen
-        name="profile"
-        options={{
-          title: 'Profile',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name="person-outline" size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
         name="documents"
         options={{
-          title: 'Documents',
+          href: null,
+          title: 'Documente',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="document-outline" size={size} color={color} />
           ),
@@ -47,7 +58,8 @@ export default function ParticipantLayout() {
       <Tabs.Screen
         name="leaderboard"
         options={{
-          title: 'Leaderboard',
+          href: null,
+          title: 'Clasament',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="trophy-outline" size={size} color={color} />
           ),
@@ -56,7 +68,8 @@ export default function ParticipantLayout() {
       <Tabs.Screen
         name="gallery"
         options={{
-          title: 'Gallery',
+          href: null,
+          title: 'Galerie',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name="images-outline" size={size} color={color} />
           ),

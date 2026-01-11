@@ -4,24 +4,16 @@ import { supabase } from '@/lib/supabase';
 import { router } from 'expo-router';
 import { View } from 'react-native';
 
-export default function DashboardScreen() {
+export default function CoordinatorProfile() {
   async function handleLogout() {
-    try {
-      const { error } = await supabase.auth.signOut();
-      if (error) {
-        console.error('Logout error:', error);
-      }
-    } catch (e) {
-      console.error('Logout exception:', e);
-    }
-    // Navigate directly to login screen
+    await supabase.auth.signOut();
     router.replace('/(auth)/login');
   }
 
   return (
     <View className="flex-1 items-center justify-center bg-background">
-      <Text className="text-xl font-semibold">Panou de control</Text>
-      <Text className="text-muted-foreground mt-2 text-center">Aici vom avea dashboard-ul pentru admin</Text>
+      <Text className="text-xl font-semibold">Profil</Text>
+      <Text className="text-muted-foreground mt-2 text-center">Aici vom avea profilul coordonatorului</Text>
       
       <Button className="mt-8" variant="destructive" onPress={handleLogout}>
         <Text>Deconectare</Text>
