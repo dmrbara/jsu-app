@@ -13,7 +13,7 @@ export default function ChatLayout() {
       <Stack.Screen
         name="house"
         options={{
-          title: 'Chat Casă',
+          title: 'Chat Căsuță',
           headerShown: false,
         }}
       />
