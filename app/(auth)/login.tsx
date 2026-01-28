@@ -5,6 +5,7 @@ import { supabase } from '@/lib/supabase';
 import { router } from 'expo-router';
 import * as React from 'react';
 import { Alert, Image, KeyboardAvoidingView, Platform, ScrollView, View, type TextInput } from 'react-native';
+import {ErrorHandler} from "@/lib/error-handling/ErrorHandler";
 
 export default function LoginScreen() {
   const [username, setUsername] = React.useState('');
@@ -29,7 +30,7 @@ export default function LoginScreen() {
     });
 
     if (error) {
-      Alert.alert('Autentificare eșuată', 'Verifică utilizatorul și parola.');
+      ErrorHandler.show(error);
       setLoading(false);
     } else {
       router.replace('/');
